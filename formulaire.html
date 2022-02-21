@@ -1,0 +1,62 @@
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style03.css">
+    <title>Mon premier formulaire</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mon premier formulaire</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Contact</h2>
+                <hr />
+                <!-- Début du formulaire -->
+                <form méthode="POST" action="#" id="contact">
+
+                    <!-- Text nom et prenom -->
+                    <label for="nom">Nom : </label>
+                    <input id="nom" name="nom" type="text" placeholder="Nom">
+                    <br />
+                    <label for="prenom">Prénom : </label>
+                    <input id="prenom" name="prenom" type="text" placeholder="Prénom">
+                    <!-- Genre - Radio  -->
+                    <div>
+                        <p>Genre</p>
+                        <input type="radio" id="homme" name="genre" value="homme" checked>
+                        <label for="homme">Homme</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="femme" name="genre" value="femme">
+                        <label for="femme">Femme</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="none" name="genre" value="none">
+                        <label for="none">Non genré</label>
+                    </div>
+
+                    <!-- ENVOYER -->
+                    <br />
+                    <div>
+                        <input type="submit" name="send" value="Envoyer" />
+                        <input type="reset" name="cancel" value="Annuler" />
+                    </div>
+                </form>
+                <hr />
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h2>Fait par @ZOUAD Vincent</h2>
+    </footer>
+</body>
+
+</html>
